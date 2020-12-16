@@ -151,7 +151,7 @@ button {
   font-family: "Bungee Shade", cursive;
   padding: 50px;
   text-align: center;
-  margin: 0 35% 0 35%;
+  margin: 0 20% 0 20%;
 }
 
 .home__description {
@@ -309,6 +309,7 @@ button {
 footer {
   text-align: center;
   align-items: center;
+  padding: 30px;
 }
 footer img {
   width: 50px;
