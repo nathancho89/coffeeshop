@@ -1,0 +1,479 @@
+/* global */
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #dbdbdb;
+  --color-pink: #fdbab8;
+  --color-dark-pink: #ff9090f8;
+  --color-black: #000000;
+  --color-dark-grey: #4d4d4d;
+  --color-light-grey: #7c7979;
+  --color-grey: #5c5c5c;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+
+  /* font size */
+  --font-xx-large: 68px;
+  --font-x-large: 58px;
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* size */
+  --size-border-radius: 4px;
+
+  /* annimation duration */
+  --animation-duration: 300ms;
+}
+
+/* body */
+body {
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  cursor: default;
+  background: url("image/coffeestore.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  cursor: default;
+}
+
+/* loader */
+canvas {
+  display: block;
+  left: 50%;
+  margin: -125px 0 0 -125px;
+  position: absolute;
+  top: 50%;
+}
+
+/* Navbar */
+.navbar__logo {
+  font-family: "Poiret One", cursive;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  list-style: none;
+  font-size: x-large;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  color: var(--color-white);
+  padding: 0px 12px;
+  width: 100%;
+  transition: var(--animation-duration) ease-in-out;
+  z-index: 1;
+}
+
+#navbar.navbar--dark {
+  background: rgb(121, 121, 121);
+  color: white;
+  padding: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+  padding: 5px 0;
+  margin: 2px 0;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  border: 1px solid transparent;
+  margin: 0 4px;
+}
+
+.navbar__logo:hover {
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-pink);
+  transition: all var(--animation-duration);
+  border: 1px solid transparent;
+  margin: 0 4px;
+}
+
+.navbar__menu__item {
+  border: 1px solid transparent;
+  padding: 8px 20px;
+  margin: 0 4px;
+  border-radius: var(--size-border-radius);
+  cursor: pointer;
+}
+
+.navbar__menu__item:hover {
+  border: 1px solid white;
+  border-radius: var(--size-border-radius);
+  background-color: var(--color-blue);
+  transition: all var(--animation-duration);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 6px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
+/* home */
+#home {
+  font-family: "Bungee Shade", cursive;
+  padding: 50px;
+  text-align: center;
+  margin: 0 35% 0 35%;
+}
+
+.home__description {
+  font-family: "Great Vibes", cursive;
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  background-color: rgba(182, 182, 182, 0.418);
+  border-radius: 10px;
+}
+
+.home__name,
+.home__by {
+  font-weight: bold;
+  font-size: 58px;
+}
+
+.home__name {
+  opacity: 1;
+}
+
+/* about */
+#about {
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.about__h1 {
+  font-family: "Bungee Shade", cursive;
+  font-weight: bold;
+  font-size: 58px;
+}
+
+.about__h2 {
+  font-weight: bold;
+  font-size: 32px;
+  padding: 50px;
+  margin: 0 20% 0 20%;
+}
+
+.about__p {
+  font-weight: bold;
+  font-size: 32px;
+  padding: 50px;
+  margin: 0 20% 0 20%;
+  background-color: rgba(190, 190, 190, 0.562);
+  border-radius: 10px;
+}
+
+.home__name {
+  opacity: 1;
+}
+
+/* MENU */
+#menu {
+  font-family: "Amatic SC", cursive;
+  margin: 0 20% 0 20%;
+  padding: 50px;
+  text-align: center;
+}
+
+.menu__h1 {
+  font-family: "Bungee Shade", cursive;
+  font-weight: bold;
+  font-size: 58px;
+  color: black;
+}
+
+.menu__p {
+  font-size: 30px;
+  color: black;
+  background-color: rgba(190, 190, 190, 0.562);
+  border-radius: 10px;
+}
+
+.menuset {
+  display: flex;
+  color: #e0f2f1;
+}
+
+.menuset__title {
+  color: var(--color-orange);
+  font-size: var(--font-medium);
+}
+
+.menu__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-yellow);
+}
+
+.menu__value {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 145);
+}
+
+.menu {
+  margin-bottom: 32px;
+}
+
+.menuset__left {
+  flex-basis: 60%;
+  background-color: #5f5f5f88;
+
+  padding: 20px 40px;
+}
+
+.font {
+  font-family: "Libre Barcode 39", cursive;
+  font-size: 18px;
+}
+
+.cost {
+  font-size: 18px;
+  font-family: "Libre Barcode EAN13 Text", cursive;
+}
+.skillset__right {
+  flex-basis: 40%;
+  background-color: #b1b1b188;
+}
+
+.tools {
+  background-color: #9c9c9c88;
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+/* FIND US */
+.image {
+  display: inline-block;
+  align-items: center;
+}
+
+.one,
+.two,
+.three,
+.four {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  margin: 40px;
+  border: 3px solid black;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  align-items: center;
+}
+footer img {
+  width: 50px;
+}
+
+/* scroll */
+.arrow__up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: var(--color-white);
+  font-size: 50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.arrow__up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-white);
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgb(51, 255, 112);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 198, 198);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #92dcff;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  :root {
+    /* font size */
+    --font-large: 30px;
+    --font-medium: 28px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+  #home,
+  #menu {
+    margin: 0;
+  }
+
+  .navbar__logo {
+    font-size: 2px;
+  }
+  .navbar__toggle-btn {
+    display: block;
+    top: 5px;
+    right: 30px;
+    font-size: 18px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(116, 116, 116, 0.329);
+    width: 100%;
+  }
+
+  .navbar__menu {
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .home__name {
+    width: 100%;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 60px;
+  }
+
+  .about__h1,
+  .about__h2,
+  .about__p,
+  .menu__p {
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+
+  .about__p {
+    font-size: var(--font-medium);
+  }
+
+  .menu__h1 {
+    font-size: 38px;
+  }
+
+  .menuset {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-grow: 1;
+  }
+
+  .image {
+    align-items: center;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    margin: 0;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .arrow__up {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+// FONT
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Padauk', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Space Mono', monospace;
+font-family: 'Libre Barcode 39', cursive;
+font-family: 'Libre Barcode EAN13 Text', cursive;
+*/
