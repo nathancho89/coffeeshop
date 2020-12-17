@@ -2,15 +2,6 @@
 "use strict";
 console.log("Hello World!");
 
-// preloader
-jQuery(document).ready(function ($) {
-  $(window).load(function () {
-      setTimeout(function(){
-          $('#preloader').fadeOut('slow', function () {
-          });
-      },2000); // set the time here
-  });  
-});
 
 // Make navbar Transparent when on top
 const navbar = document.querySelector("#navbar");
